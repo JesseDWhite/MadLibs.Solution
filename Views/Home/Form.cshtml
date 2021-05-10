@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>A fantastical adventure</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Fill in the blanks to write your story!</h1>
+    <div>
+      <form action="/madlib" method="post">
+        <div class="form-group">
+          <label for="friend-name">A friend's name</label>
+          <input id="friend-name" name="friendName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="action-verb">An action verb</label>
+          <input id="action-verb" name="actionVerb" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="size-adjective">An adjective describing size</label>
+          <input id="size-adjective" name="sizeAdjective" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="speed-adjective">An adjective describing speed</label>
+          <input id="speed-adjective" name="speedAdjective" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="throwable-object">An object you can throw</label>
+          <input id="throwable-object" name="throwableObject" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="place">A place</label>
+          <input id="place" name="place" class="form-control" type="text">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Show me the story!</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
