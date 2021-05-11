@@ -18,7 +18,7 @@ namespace MadLibs.Controllers
     [Route("/form-aliens")]
     public ActionResult FormAliens() { return View(); }
 
-    [Route("/madlib")]
+    [Route("/madlibforest")]
     public ActionResult MadLibResult(string friendName, string actionVerb, string sizeAdjective, string speedAdjective, string throwableObject, string place)
     {
       MadLib newMadLib = new MadLib();
@@ -30,6 +30,8 @@ namespace MadLibs.Controllers
       newMadLib.Place = place;
       return View(newMadLib);
     }
+    [Route("/madlibalien")]
+
     public ActionResult AlienResult(string friendName, string place, string smell, string headShape, string sensation, string vehicle, string soundAdjective)
     {
       MadLib newMadLib = new MadLib();
